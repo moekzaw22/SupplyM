@@ -1,0 +1,1 @@
+localStorage.setItem('mySessionData', 'your_data');
