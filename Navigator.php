@@ -1,8 +1,6 @@
-<?php 
-
+<?php
 include('connection.php');
 include('CheckUser_Login.php');
-    
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -12,10 +10,10 @@ include('CheckUser_Login.php');
     <style>
       .hidden {
         display: none;
-      }
+  }
       body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+        margin: 0;
+        font-family: 'Arial', sans-serif;
   }
 
   .navigation {
@@ -57,7 +55,7 @@ include('CheckUser_Login.php');
 
             // Construct the URL with parameters
             var url = targetPage + '?user=' + encodeURIComponent(userValue) +
-                      '&store=' + encodeURIComponent(storeValue);
+                      '&Warehouse=' + encodeURIComponent(storeValue);
 
             // Redirect to the target page
             window.location.href = url;
@@ -86,15 +84,15 @@ include('CheckUser_Login.php');
 <div style="display:none;">
   <p>
         <label for="user">User:</label>
-        <input type="text" id="user" value="John">
+        <input type="text" id="user" value="<?php echo $_SESSION['username']; ?>">
     </p>
 
     <p>
         <label for="store">Store:</label>
-        <input type="text" id="store" value="123">
+        <input type="text" id="store" value="<?php echo $_SESSION['Warehouse_Name']; ?>">
     </p>
 </div>
-  
+
   <body onload="showSection('')">
     <div class="navigation">
       <button onclick="showSection('customer')">Customer</button>

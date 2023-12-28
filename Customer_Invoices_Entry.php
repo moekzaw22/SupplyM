@@ -2,21 +2,11 @@
 include('connection.php');
 include('CheckUser_Login.php');
 ?>
-<div style="display:none;">
-  <p>
-        <label for="user">User:</label>
-        <input type="text" id="user" value="<?php $username ?>">
-    </p>
 
-    <p>
-        <label for="store">Store:</label>
-        <input type="text" id="store" value="<?php $warehouseName ?>">
-    </p>
-</div>
 <script type="text/javascript" src="Navigator.js"></script>
 <div class="container">
 
-<div> 
+<div>
 <p><label for="">Name</label> <input type="text" name="" value=""></p>
 
 <p><label for="">Their ref</label> <input type="text" name="" value=""></p>
